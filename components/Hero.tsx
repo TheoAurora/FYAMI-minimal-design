@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
           Increase Demand. Generate <span className="text-[#6D28D9]">High-Value</span> Leads.
         </h1>
         <p className="text-xl md:text-2xl text-[#53535B] opacity-80 max-w-3xl mx-auto mb-10 leading-relaxed">
-          I help businesses across Tech, Cyber Security, FinTech, and SaaS accelerate sales growth through data-backed demand generation and digital strategy.
+          We help businesses across Tech, Cyber Security, FinTech, and SaaS accelerate sales growth through data-backed demand generation and digital strategy.
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
 
         <div className="mt-24 opacity-60">
           <p className="text-xs font-bold uppercase tracking-[0.3em] mb-10 text-[#425B76]">Proven results delivered for</p>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 grayscale hover:grayscale-0 transition-all duration-700">
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 transition-all duration-700">
              <span className="text-xl font-bold text-[#425B76]">Microsoft</span>
              <span className="text-xl font-bold text-[#425B76] border-l border-[#D7D9E3] pl-8">Fortinet</span>
              <span className="text-xl font-bold text-[#425B76] border-l border-[#D7D9E3] pl-8">Intersys</span>

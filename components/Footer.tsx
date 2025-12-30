@@ -30,20 +30,24 @@ const Footer: React.FC = () => {
           <div>
             <h5 className="font-bold text-xl mb-6">Connect</h5>
             <ul className="space-y-4 text-white/60">
-              <li><a href="#" className="hover:text-[#6D28D9] transition-colors">LinkedIn</a></li>
-              <li><a href="#" className="hover:text-[#6D28D9] transition-colors">Twitter</a></li>
-              <li><a href="#" className="hover:text-[#6D28D9] transition-colors">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/in/fayeeldridge/" target="_blank" rel="noopener noreferrer" className="hover:text-[#6D28D9] transition-colors">LinkedIn</a></li>
+              <li><span>Email - Faye@Fyami.com</span></li>
             </ul>
           </div>
         </div>
         
-        <div className="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="text-white/40 text-sm">
-            © {new Date().getFullYear()} FYAMI Limited. All rights reserved.
+        <div className="pt-12 border-t border-white/10 flex flex-col gap-6">
+          <div className="text-white/40 text-sm text-center md:text-left">
+            Registered Office: 167-169 Great Portland Street, 5th Floor, London, W1W 5PF
           </div>
-          <div className="flex gap-8 text-white/40 text-sm">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div className="text-white/40 text-sm">
+              © {new Date().getFullYear()} FYAMI Limited. All rights reserved.
+            </div>
+            <div className="flex gap-8 text-white/40 text-sm">
+              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+            </div>
           </div>
         </div>
       </div>

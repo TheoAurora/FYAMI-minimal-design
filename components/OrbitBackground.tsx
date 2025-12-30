@@ -17,7 +17,7 @@ const OrbitBackground: React.FC = () => {
 
         {/* Ring 3 - Large */}
         <div className="absolute border-[1px] border-[#6D28D9]/15 rounded-full w-[850px] h-[850px] animate-orbit-spin" style={{ animationDuration: '40s' }}>
-           <div className="absolute bottom-1/4 right-0 w-2 h-2 bg-[#6D28D9] rounded-full"></div>
+           <div className="absolute top-1/2 -right-1 -translate-y-1/2 w-2 h-2 bg-[#6D28D9] rounded-full"></div>
         </div>
 
         {/* Gradient Orbs for depth */}

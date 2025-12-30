@@ -37,7 +37,7 @@ const WhyUs: React.FC = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-sm font-bold text-[#6D28D9] uppercase tracking-[0.2em] mb-4">Core Expertise</h2>
-          <h3 className="text-4xl md:text-5xl font-bold text-[#425B76] mb-6">How I Drive Growth</h3>
+          <h3 className="text-4xl md:text-5xl font-bold text-[#425B76] mb-6">How We Drive Growth</h3>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8">
@@ -57,7 +57,7 @@ const WhyUs: React.FC = () => {
         <div className="mt-20 p-12 bg-[#425B76] rounded-[40px] text-white flex flex-col md:flex-row items-center justify-between gap-10">
           <div className="max-w-xl">
             <h4 className="text-3xl font-bold mb-4">Ready to accelerate?</h4>
-            <p className="text-white/80 text-lg">Download my Lead Gen framework or book a 15-minute growth audit.</p>
+            <p className="text-white/80 text-lg">Download our Lead Gen framework or book a 15-minute growth audit.</p>
           </div>
           <a href="#contact" className="px-10 py-4 bg-[#6D28D9] text-white font-bold rounded-full hover:scale-105 transition-all shadow-lg text-center">
             Let's Connect

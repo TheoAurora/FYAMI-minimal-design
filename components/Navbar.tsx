@@ -15,21 +15,21 @@ const Navbar: React.FC = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${scrolled ? 'py-3 bg-white/80 backdrop-blur-md shadow-sm' : 'py-6 bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <a href="#" className="flex items-center">
-          <img 
-            src="https://139641198.fs1.hubspotusercontent-eu1.net/hub/139641198/hubfs/FYAMI%20LOGO.png?width=97&height=73&name=FYAMI%20LOGO.png" 
-            alt="FYAMI Logo" 
+        <a href="/" className="flex items-center">
+          <img
+            src="/fyami-logo-transp.png"
+            alt="FYAMI Logo"
             className="h-10 md:h-12 w-auto object-contain"
           />
         </a>
-        
+
         <div className="hidden md:flex items-center gap-8 font-medium">
-          <a href="#about" className="hover:text-[#6D28D9] transition-colors">About</a>
-          <a href="#why-us" className="hover:text-[#6D28D9] transition-colors">Services</a>
-          <a href="#success" className="hover:text-[#6D28D9] transition-colors">Success</a>
-          <a href="#blog" className="hover:text-[#6D28D9] transition-colors">Blog</a>
-          <a 
-            href="#contact" 
+          <a href="#/about" className="hover:text-[#6D28D9] transition-colors">About Us</a>
+          <a href="/#why-us" className="hover:text-[#6D28D9] transition-colors">Services</a>
+          <a href="#/success" className="hover:text-[#6D28D9] transition-colors">Success</a>
+          <a href="#/blogs" className="hover:text-[#6D28D9] transition-colors">Blogs</a>
+          <a
+            href="/#contact"
             className="px-6 py-2.5 bg-[#425B76] text-white rounded-full hover:bg-[#6D28D9] transition-all duration-300 shadow-md hover:shadow-lg"
           >
             Get in Touch

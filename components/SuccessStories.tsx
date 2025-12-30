@@ -32,7 +32,7 @@ const SuccessStories: React.FC = () => {
           <div className="max-w-2xl">
             <h2 className="text-sm font-bold text-[#6D28D9] uppercase tracking-[0.2em] mb-4">Case Studies</h2>
             <h3 className="text-4xl md:text-5xl font-bold text-[#425B76] mb-6">Real Results. Real Growth.</h3>
-            <p className="text-lg opacity-70">From securing government funding to topping Google Search, my focus is always on high-impact outcomes.</p>
+            <p className="text-lg opacity-70">From securing government funding to topping Google Search, our focus is always on high-impact outcomes.</p>
           </div>
         </div>
 
@@ -42,7 +42,7 @@ const SuccessStories: React.FC = () => {
               <img 
                 src={s.image} 
                 alt={s.client} 
-                className="w-full h-48 object-cover grayscale hover:grayscale-0 transition-all duration-500" 
+                className="w-full h-48 object-cover transition-all duration-500" 
               />
               <div className="p-8">
                 <div className="text-xs font-bold text-[#6D28D9] uppercase tracking-wider mb-2">{s.tag}</div>

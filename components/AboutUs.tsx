@@ -11,7 +11,7 @@ const AboutUs: React.FC = () => {
             <img 
               src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800" 
               alt="Professional Strategy" 
-              className="relative z-10 rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
+              className="relative z-10 rounded-2xl shadow-2xl transition-all duration-700"
             />
             <div className="absolute -bottom-8 -right-8 bg-white p-8 rounded-xl shadow-xl z-20 border border-[#D7D9E3]">
               <div className="text-4xl font-bold text-[#6D28D9]">London</div>
@@ -25,10 +25,10 @@ const AboutUs: React.FC = () => {
               Specialist Strategy for Complex Tech
             </h3>
             <p className="text-lg text-[#53535B] mb-6 leading-relaxed">
-              Based in London, I run a specialist sales and marketing consultancy supporting tech, cyber security, OT, IoT, SaaS, finance, fintech, and payments globally.
+              Based in London, we run a specialist sales and marketing consultancy supporting tech, cyber security, OT, IoT, SaaS, finance, fintech, and payments globally.
             </p>
             <p className="text-lg text-[#53535B] mb-8 leading-relaxed">
-              I’ve built a six-figure consultancy as a solo expert by focusing on what matters: <strong>demand generation and lead conversion.</strong> From strengthening Microsoft & Fortinet partnerships to helping AI startups secure &pound;180K government grants, my mission is to drive real, measurable business growth.
+              We focus on what matters: <strong>demand generation and lead conversion.</strong> Our mission is to drive real, measurable business growth for our clients.
             </p>
             <div className="grid grid-cols-2 gap-8">
               <div className="border-l-4 border-[#6D28D9] pl-6">
