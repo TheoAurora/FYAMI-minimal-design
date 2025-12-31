@@ -15,13 +15,16 @@ import BlogPostRSA from './components/BlogPostRSA';
 import BlogPostLondonGherkin from './components/BlogPostLondonGherkin';
 import BlogPost from './components/BlogPost';
 import AboutUsPage from './components/AboutUsPage';
+import CaseStudyPost from './components/CaseStudyPost';
 import { getBlogBySlug, BlogContent } from './data/blogContent';
+import { getCaseStudyBySlug, CaseStudyContent } from './data/caseStudyContent';
 
-type PageType = 'home' | 'blogs' | 'success' | 'blog-rsa-san-fran' | 'blog-london-gherkin' | 'blog-dynamic' | 'about';
+type PageType = 'home' | 'blogs' | 'success' | 'blog-rsa-san-fran' | 'blog-london-gherkin' | 'blog-dynamic' | 'about' | 'case-study-dynamic';
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<PageType>('home');
   const [currentBlog, setCurrentBlog] = useState<BlogContent | null>(null);
+  const [currentCaseStudy, setCurrentCaseStudy] = useState<CaseStudyContent | null>(null);
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -29,37 +32,58 @@ const App: React.FC = () => {
       if (hash === '#/blogs') {
         setCurrentPage('blogs');
         setCurrentBlog(null);
+        setCurrentCaseStudy(null);
         window.scrollTo(0, 0);
       } else if (hash === '#/about') {
         setCurrentPage('about');
         setCurrentBlog(null);
+        setCurrentCaseStudy(null);
         window.scrollTo(0, 0);
       } else if (hash === '#/success') {
         setCurrentPage('success');
         setCurrentBlog(null);
+        setCurrentCaseStudy(null);
         window.scrollTo(0, 0);
       } else if (hash === '#/blog/rsa-san-fran-2024') {
         setCurrentPage('blog-rsa-san-fran');
         setCurrentBlog(null);
+        setCurrentCaseStudy(null);
         window.scrollTo(0, 0);
       } else if (hash === '#/blog/london-gherkin-2024') {
         setCurrentPage('blog-london-gherkin');
         setCurrentBlog(null);
+        setCurrentCaseStudy(null);
         window.scrollTo(0, 0);
+      } else if (hash.startsWith('#/case-study/')) {
+        const slug = hash.replace('#/case-study/', '');
+        const caseStudy = getCaseStudyBySlug(slug);
+        if (caseStudy) {
+          setCurrentPage('case-study-dynamic');
+          setCurrentCaseStudy(caseStudy);
+          setCurrentBlog(null);
+          window.scrollTo(0, 0);
+        } else {
+          setCurrentPage('success');
+          setCurrentCaseStudy(null);
+          setCurrentBlog(null);
+        }
       } else if (hash.startsWith('#/blog/')) {
         const slug = hash.replace('#/blog/', '');
         const blog = getBlogBySlug(slug);
         if (blog) {
           setCurrentPage('blog-dynamic');
           setCurrentBlog(blog);
+          setCurrentCaseStudy(null);
           window.scrollTo(0, 0);
         } else {
           setCurrentPage('home');
           setCurrentBlog(null);
+          setCurrentCaseStudy(null);
         }
       } else {
         setCurrentPage('home');
         setCurrentBlog(null);
+        setCurrentCaseStudy(null);
       }
     };
 
@@ -80,6 +104,10 @@ const App: React.FC = () => {
       </div>
     </div>
   );
+
+  if (currentPage === 'case-study-dynamic' && currentCaseStudy) {
+    return renderWithLayout(<CaseStudyPost caseStudy={currentCaseStudy} />);
+  }
 
   if (currentPage === 'blog-dynamic' && currentBlog) {
     return renderWithLayout(<BlogPost blog={currentBlog} />);

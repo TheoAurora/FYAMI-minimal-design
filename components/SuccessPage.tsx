@@ -12,6 +12,62 @@ interface CaseStudy {
 }
 
 const caseStudies: CaseStudy[] = [
+  // New case studies from txt files
+  {
+    title: "Driving High-Value Pipeline Through Executive Roundtables",
+    date: "8th September 2025",
+    excerpt: "Cyber Energia partnered with Fyami to generate qualified enterprise demand through an invite-only executive roundtable in Las Vegas, achieving 100% attendance from confirmed guests.",
+    category: "Case Study",
+    img: "https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?w=800&auto=format&fit=crop&q=60",
+    link: "#/case-study/cyber-energia-las-vegas",
+    isInternal: true
+  },
+  {
+    title: "Accelerating Pipeline Through Executive Energy Security Roundtables - London",
+    date: "20th November 2025",
+    excerpt: "Hosted at The Savoy Hotel, this invite-only executive roundtable delivered sales-qualified demand and contributed to closed deals for Cyber Energia.",
+    category: "Case Study",
+    img: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&auto=format&fit=crop&q=60",
+    link: "#/case-study/cyber-energia-london",
+    isInternal: true
+  },
+  {
+    title: "Remote Executive Roundtable Delivery for APAC Market Entry",
+    date: "16th July 2025",
+    excerpt: "Fyami managed the entire guest strategy remotely for an executive roundtable in Melbourne, focusing on the Cyber Security Act 2024.",
+    category: "Case Study",
+    img: "https://images.unsplash.com/photo-1514395462725-fb4566210144?w=800&auto=format&fit=crop&q=60",
+    link: "#/case-study/cyber-energia-melbourne",
+    isInternal: true
+  },
+  {
+    title: "In-Person Executive Roundtable Driving Pipeline in Southern Europe",
+    date: "7th May 2025",
+    excerpt: "Fyami attended in person in Milan, supporting execution while owning guest strategy and enabling direct engagement between sales leadership and qualified prospects.",
+    category: "Case Study",
+    img: "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=800&auto=format&fit=crop&q=60",
+    link: "#/case-study/cyber-energia-milan",
+    isInternal: true
+  },
+  {
+    title: "Generating High-Quality Executive Leads in Germany's Energy Sector",
+    date: "25th November 2025",
+    excerpt: "Hosted at the five-star Tortue Hotel in Hamburg, this roundtable brought together senior leaders responsible for securing critical renewable energy infrastructure.",
+    category: "Case Study",
+    img: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&auto=format&fit=crop&q=60",
+    link: "#/case-study/cyber-energia-hamburg",
+    isInternal: true
+  },
+  {
+    title: "Driving Senior Financial Services Awareness Through Executive Roundtables",
+    date: "2025",
+    excerpt: "Intersys partnered with Fyami for a private executive breakfast roundtable targeting CIOs, CTOs, and Managing Directors in financial services.",
+    category: "Case Study",
+    img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop&q=60",
+    link: "#/case-study/intersys-financial-services",
+    isInternal: true
+  },
+  // Original case studies
   {
     title: "Case Study: Renewable Energy & Cyber Security Round Table Event: RSA, San Fran 2024",
     date: "12 May 2024",
